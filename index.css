@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scrollbar-color: #4a4a48 #f1f5f9;
+    scrollbar-width: auto;
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('living.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.top-section{
+    /* position: fixed; */
+    width: 100%;
+    display: flex;
+    color: #ffffff;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 20px;
+}
+.top-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-logo h1{
+    font-family: Montserrat Alternates;
+    font-size: 30px;
+}
+.top-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-links ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+.top-links ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: Unica One;
+    position: relative;
+    display: inline-block;
+}
+.top-links ul li a::after{
+    content: ' ';
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    transform: translateX(-50%);
+    background: linear-gradient(to right, #9d50bb, #6e48aa);
+    transition: width 0.3s ease;
+}
+.top-links ul li a:hover::after{
+    width: 100%;
+}
+.top-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    margin-right: 10px;
+}
+.top-icons i{
+    font-size: 19px;
+    font-weight: 500;
+    margin-left: 28px;
+    transition: 0.3s;
+}
+.top-icons i:hover{
+    color: blue;
+    cursor: pointer;
+}
+.middle-section{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+}
+.middle-section h1{
+    margin-top: 10px;
+    font-size: 65px;
+    font-family: Aclonica;
+    font-weight: 500;
+    flex-wrap: wrap;
+}
+.middle-section p{
+    margin-top: 20px;
+    font-size: 25px;
+    color: #fff;
+    font-family: MuseoModerno;
+}
+.middle-section button{
+    margin-top: 15px;
+}
+.middle-section .btn{
+    display: inline-block;
+    transform-origin: center;
+    color: #e6e6e6;
+    transition: all 0.3s ease;
+    letter-spacing: 2px;
+    padding: 12px 32px;
+    font-size: 17px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-family: Montserrat Alternates;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.middle-section .btn:hover {
+    transform: scale(1.04);
+    transition: 0.3s;
+    color: #ffffff;
+}
+.middle-section .btn i{
+    margin-right: 10px;
+}
